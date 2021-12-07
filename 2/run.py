@@ -1,8 +1,5 @@
-global fhandle
-
-fhandle = open("./input.txt")
-
 def partone():
+	fhandle = open("./input.txt")
 	dep = 0
 	hor = 0
 	for line in fhandle:
@@ -18,6 +15,7 @@ def partone():
 	print(f"Solution: {dep*hor}")
 
 def parttwo():
+	fhandle = open("./input.txt")
 	aim = 0
 	hor = 0
 	dep = 0
@@ -33,5 +31,6 @@ def parttwo():
 		elif words[0] == "up":
 			aim -= val
 	print(f"Solution: {dep*hor}")
-
+	
+partone()
 parttwo()
